@@ -302,8 +302,8 @@ body.is-instant:after {
 	margin-left: calc((var(--gutters) * -0.5) - 0.5px);
 	position: absolute;
 	width: 0;
-	height: 100%;
-	top: 0;
+	height: calc(100% - (var(--padding-vertical) * 2));
+	top: var(--padding-vertical);
 }
 
 #columns01.columns > .wrapper > .inner > *:first-child:before {
@@ -717,8 +717,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-left: 0 !important;
 		top: auto !important;
 		margin-top: calc((var(--gutters) * -0.5) - 0.5px) !important;
-		left: 0 !important;
-		width: 100% !important;
+		left: var(--padding-horizontal) !important;
+		width: calc(100% - (var(--padding-horizontal) * 2)) !important;
 	}
 	
 	#columns01.columns > .wrapper > .inner > *:last-child {
